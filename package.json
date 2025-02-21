@@ -8,12 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-
- 
-  "build": "vite build",
-  "start": "vite preview --host"
-
-
+   
+  "start": "vite preview --host --port $PORT"
   },
   "dependencies": {
     "@google/generative-ai": "^0.2.1",

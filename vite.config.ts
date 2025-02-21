@@ -10,7 +10,9 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
   server: {
-    port: Number(process.env.PORT) || 3000, // Use the Render-assigned port
+    port: Number(process.env.PORT) || 3000, 
+    // Use the Render-assigned port
+    // port:3000,
     host: '0.0.0.0' // Required for Render to detect the open port
   },
   resolve: {
