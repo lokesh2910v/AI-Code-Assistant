@@ -10,8 +10,8 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
   server: {
-    port:3000, // Use Replit’s assigned port
-    host: '0.0.0.0', // Allow external access
+    port: Number(process.env.PORT) || 3000, // Use the Render-assigned port
+    host: '0.0.0.0' // Required for Render to detect the open port
   },
   resolve: {
     alias: {
